@@ -1,7 +1,7 @@
 public class Diamond {
     public static void main (String[] args) {
         Diamond d = new Diamond();
-        d.printHalfDiamond(4);
+        d.printHalfDiamond(3);
     }
 
     void printHalfDiamond(int num) {
