@@ -1,9 +1,32 @@
-public class Diamond {
+public class ProgrammingExercise {
     public static void main (String[] args) {
-        Diamond d = new Diamond();
-        d.printDiamond(3, "half", "");
-        d.printDiamond(3, "full", "");
-        d.printDiamond(3, "full", "Stephanie");
+        ProgrammingExercise p = new ProgrammingExercise();
+        p.printAsterisks(1, "horizontal");
+        p.printAsterisks(8, "horizontal");
+        p.printAsterisks(3, "vertical");
+        p.printRightTriangle(3);
+        p.printDiamond(3, "half", "");
+        p.printDiamond(3, "full", "");
+        p.printDiamond(3, "full", "Stephanie");
+    }
+
+    void printAsterisks(int num, String orientation) {
+        for(int x = 0; x < num; x++) {
+            if (x == (num-1) || orientation.equals("vertical")) {
+                System.out.println("*");
+            } else {
+                System.out.print("*");
+            }
+
+        }
+    }
+
+    void printRightTriangle(int num) {
+        StringBuilder sb = new StringBuilder();
+        for(int x = 0; x < num; x++) {
+            sb.append("*");
+            System.out.println(sb.toString());
+        }
     }
 
     void printDiamond(int num, String type, String name) {
