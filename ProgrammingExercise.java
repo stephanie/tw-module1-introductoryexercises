@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class ProgrammingExercise {
     public static void main (String[] args) {
         ProgrammingExercise p = new ProgrammingExercise();
@@ -8,7 +10,8 @@ public class ProgrammingExercise {
         // p.printDiamond(3, "half", "");
         // p.printDiamond(3, "full", "");
         // p.printDiamond(3, "full", "Stephanie");
-        p.fizzBuzz();
+        // p.fizzBuzz();
+        p.generate(30);
     }
 
     void printAsterisks(int num, String orientation) {
@@ -82,5 +85,17 @@ public class ProgrammingExercise {
                 System.out.println(x);
             }
         }
+    }
+
+    void generate(int num) {
+        ArrayList<Integer> primeFactors = new ArrayList<Integer>();
+        for (int x = 2; x <= num; x++) {
+            if (num % x == 0) {
+                primeFactors.add(x);
+                num /= x;
+                x--;
+            }
+        }
+        System.out.println(primeFactors);
     }
 }
