@@ -3,14 +3,14 @@ import java.util.ArrayList;
 public class ProgrammingExercise {
     public static void main (String[] args) {
         ProgrammingExercise p = new ProgrammingExercise();
-        // p.printAsterisks(1, "horizontal");
-        // p.printAsterisks(8, "horizontal");
-        // p.printAsterisks(3, "vertical");
-        // p.printRightTriangle(3);
-        // p.printDiamond(3, "half", "");
-        // p.printDiamond(3, "full", "");
-        // p.printDiamond(3, "full", "Stephanie");
-        // p.fizzBuzz();
+        p.printAsterisks(1, "horizontal");
+        p.printAsterisks(8, "horizontal");
+        p.printAsterisks(3, "vertical");
+        p.printRightTriangle(3);
+        p.printDiamond(3, "half", "");
+        p.printDiamond(3, "full", "");
+        p.printDiamond(3, "full", "Stephanie");
+        p.fizzBuzz();
         p.generate(30);
     }
 
