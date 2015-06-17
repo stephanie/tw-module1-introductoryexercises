@@ -1,13 +1,14 @@
 public class ProgrammingExercise {
     public static void main (String[] args) {
         ProgrammingExercise p = new ProgrammingExercise();
-        p.printAsterisks(1, "horizontal");
-        p.printAsterisks(8, "horizontal");
-        p.printAsterisks(3, "vertical");
-        p.printRightTriangle(3);
-        p.printDiamond(3, "half", "");
-        p.printDiamond(3, "full", "");
-        p.printDiamond(3, "full", "Stephanie");
+        // p.printAsterisks(1, "horizontal");
+        // p.printAsterisks(8, "horizontal");
+        // p.printAsterisks(3, "vertical");
+        // p.printRightTriangle(3);
+        // p.printDiamond(3, "half", "");
+        // p.printDiamond(3, "full", "");
+        // p.printDiamond(3, "full", "Stephanie");
+        p.fizzBuzz();
     }
 
     void printAsterisks(int num, String orientation) {
@@ -66,6 +67,20 @@ public class ProgrammingExercise {
                 }
                 System.out.println(rowString.toString());
             } 
+        }
+    }
+
+    void fizzBuzz() {
+        for(int x = 1; x <= 100; x++) {
+            if ( (x%3 == 0) && (x%5 == 0)) {
+                System.out.println("FizzBuzz");
+            } else if (x%3 == 0) {
+                System.out.println("Fizz");
+            } else if (x%5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(x);
+            }
         }
     }
 }
